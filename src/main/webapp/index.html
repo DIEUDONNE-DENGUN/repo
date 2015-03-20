@@ -8,26 +8,40 @@
     <meta name="description" content="TEAMMATES is an Online Peer Feedback System for student team projects. It is completely free to use.
     Get your students to evaluate their performance in team projects, and view reports and summaries of their feedback and evaluations.">
     <link rel="stylesheet" href="stylesheets/teammates.css" type="text/css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css" type="text/css"/>
+    
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <title>TEAMMATES [Home] - Online Peer Feedback/Evaluation System for Student Team Projects</title>
 
     <script type="text/javascript" src="/js/googleAnalytics.js"></script>
     <script type="text/javascript" src = "/js/checkBrowserVersion.js"></script>
     <script type="text/javascript" src = "/js/index.js"></script>
+    <style>
+      .body-main{
+         border: 3px solid #999;padding:3px; border-radius: 10px;-moz-border-radius:10px;-moz-box-shadow:5px 5px 10px #999; background-color: #FFFAFA
+      }
+        .customize-sub-content{
+         border: 3px solid #999;padding:3px; border-radius: 10px;-moz-border-radius:10px;-moz-box-shadow:5px 5px 10px #999; background-color: #FFFAFA
+        }
+        .main-color{
+          background-color:#FFF5EE
+        }
+    </style>
 </head>
 
-<body>
-    <div id="mainContainer">
-        <div id="header">
-            <div id="headerWrapper">
-                <div id="imageHolder">
+<body class="main-color" >
+    
+    <div id="mainContainer" class="">
+        <div id="header" class="row">
+            <div id="headerWrapper" class="col-lg-12 col-md-12 col-sm-6">
+                <div id="imageHolder" class="">
                     <a href="/index.html">
                     <img alt="TEAMMATES[Logo] - Online Peer Feedback/Evaluation System for Student Team Projects" src="images/teammateslogo.jpg" width="150px" height="47px">
                     </a>
                 </div>
                 <div id="menuHolder">
-                    <div id="textHolder">
-                        <ul id="navbar">
+                    <div id="textHolder" >
+                        <ul id="navbar" >
                             <li class="current"><strong>Home</strong></li>
                             <li><a href="features.html">Features</a></li>
                             <li><a href="about.html">About Us</a></li>
@@ -48,10 +62,13 @@
                 <div style="clear: both;"></div>
                 </div>
                 </div>
-
-                <div id="mainContent">
+                 <br>
+                <div id="mainContent" class="">
+                <div class="row">
+                  
                 <div id="browserMessage" style="display: none;"></div>
                 <br>
+                 <div class="col-sm-6 col-lg-12 col-md-12">
                 <h1 id="caption" style="text-align: center;">Student peer evaluations/feedback, shareable instructor comments, and more...</h1>
                 <div id="contentHolder">
                   
@@ -65,15 +82,19 @@
                         <td style="vertical-align:middle;text-align:left;">
                         <h2 class="subcaption"><span id= "submissionsNumber" class="submissionsNumber">1,000,000+</span> feedback entries submitted so far ...</h2></td>
                         <td style="text-align:right">
-                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://youtube.googleapis.com/v/mDtfmNmRwBM&hd=1&autoplay=1&rel=0" target="_blank"><img src="images/videoTour.png" height="40px"/></a> &nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://youtube.googleapis.com/v/mDtfmNmRwBM&hd=1&autoplay=1&rel=0" target="_blank"><img class="img-responsive" src="images/videoTour.png" height="40px"/></a> &nbsp;&nbsp;
                         <a href="request.html"><img src="images/requestButton.png" height="40px"/></a>&nbsp;&nbsp;&nbsp;&nbsp;</td>
                     </tr>
                 </table>
                 </div>
-                <img src="images/raised-edge.png" width="900px" height="30px">
+                <img class="img-responsive" src="images/raised-edge.png" width="900px" height="30px">
+                
                 <br>
-
-                <div class="overviewByte">
+                </div>
+                </div>
+                </div>
+                  <div class="row">                  
+                <div class="overviewByte customize-sub-content col-lg-12 col-md-12 col-sm-4">
                     <div class="overviewBytePicture">
                         <img alt="TEAMMATES - Praised by Users" src="images/overview_praise.png" width="175px">
                     </div>
@@ -86,11 +107,12 @@
                     </div>
                     <div style="clear: both;"></div>
                 </div>
-                
-                <div class="overviewByte">
+                <div class="row">
+                <div class="overviewByte customize-sub-content col-md-12 col-lg-12 col-sm-4">
                     <div class="overviewBytePicture">
                         <img alt="TEAMMATES - Award winning, mature, field-tested and improving all the time" src="images/award_winning.png" width="175px">
                     </div>
+                    <br>
                     <div class="overviewByteData">
                         <h2 class="overviewByteHeading">Award Winning, Mature, Field-tested:</h2>
                         <p>TEAMMATES has been in operation since 2010. It has benefited from the work of over 
@@ -100,8 +122,9 @@
                     </div>
                     <div style="clear: both;"></div>
                 </div>
-
-                <div class="overviewByte">
+                </div>
+                 <div class="row">
+                <div class="overviewByte customize-sub-content col-md-12 col-lg-12 col-sm-4">
                 <div class="overviewBytePicture">
                     <img alt="TEAMMATES - Designed for simplicity, flexibility, power" src="images/overview_peerfeedback.png" width="175px">
                 </div>
@@ -113,8 +136,9 @@
                 </div>
                 <div style="clear: both;"></div>
                 </div>
-                
-                <div class="overviewByte">
+                </div>
+                <div class="row">
+                <div class="overviewByte customize-sub-content col-md-12 col-lg-12 col-sm-4">
                     <div class="overviewBytePicture">
                         <img alt="TEAMMATES - Powered by Google Infrastructure" src="images/overview_google.png" width="175px">
                     </div>
@@ -125,8 +149,9 @@
                     </div>
                     <div style="clear: both;"></div>
                 </div>
-
-                <div class="overviewByte">
+                </div>
+               <div class="row">
+                <div class="overviewByte customize-sub-content col-md-12 col-lg-12 col-sm-4 ">
                     <div class="overviewBytePicture">
                         <img alt="TEAMMATES - Growing global community" src="images/overview_countries.png" width="175px">
                     </div>
@@ -137,8 +162,9 @@
                     </div>
                     <div style="clear: both;"></div>
                 </div>
-
-                <div class="overviewByte">
+                </div>
+                <div class="row">
+                <div class="overviewByte customize-sub-content col-md-12 col-lg-12 col-sm-4">
                   <div class="overviewBytePicture">
                     <img alt="TEAMMATES - Not for Profit" src="images/overview_funding.png" width="175px">
                   </div>
@@ -155,12 +181,15 @@
                   </div>
                   <div style="clear: both;"></div>
                 </div>
-
-        <div class="overviewByte">
+                </div>
+                <div>
+        <div class="row">
+        <div class="overviewByte customize-sub-content col-lg-12 col-md-12 col-sm-4">
                     <div class="overviewBytePicture">
                         <img alt="TEAMMATES - Well received by Academic community" src="images/overview_conference.png" width="175px">
                     </div>
-                    <div class="overviewByteData">
+                   
+                    <div class="overviewByteData ">
                         <h2 class="overviewByteHeading">Well Received by the Academic
                             Community:</h2>
                         <p>TEAMMATES has been presented, and well-received, in education-related conferences such as the 
@@ -170,14 +199,19 @@
                         and the <a href="http://cdtl.nus.edu.sg/tel2013/" target="blank">Tel2013 Symposium (Singapore)</a>.
                         </p>
                     </div>
+                    </div>
+                      </div>
                     <div style="clear: both;"></div>
-                </div>
+              
                 <br>
                 <br>
+               
+            </div>
             </div>
         </div>
     </div>
-
+  <br>
+  <br>
     <div id="footer">
         <div id="footerWrapper">
             <div id="footerRightCol">
